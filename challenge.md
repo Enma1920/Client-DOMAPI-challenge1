@@ -38,6 +38,17 @@
       FullStack Web Development.
     </p>
   </section>
+
+  <script>
+  const currentHeader = document.querySelector(".subtitle");
+
+  if(currentHeader.textContent=="the MEAN stack"){
+    currentHeader.textContent = "the MERN stack";
+    currentHeader.classList.remove('.subtitle');
+      
+  }
+  </script>
+
 </main>
 ```
 
@@ -48,6 +59,17 @@
   <h2 class="student-name"></h2>
   <span class="student-age"></span> years
   <img class="student-photo" src="" alt="" />
+  
+  <script>
+  var studentName= "Laura";
+  var studentAge = 27;
+  var studentPhotoURL= "foto.jpg";
+  document.querySelector('.student-name').textContent = name;
+  document.querySelector('.student-age').textContent = age;
+  document.querySelector('.student-photo').src = photoURL;
+
+
+  </script>
 </article>
 ```
 
